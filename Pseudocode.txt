@@ -1,0 +1,9 @@
+
+1- welcome page with a button that will take me to level 1; in like a button that will send the user to the main page and a buttons that will send the user to the next level after they win.
+2- level 1: displaying the cards (after they get shuffled maybe).
+3- A function that will flip the cards whenever the user clicked on the card similarly a function that will loop over the cards and enlarge the card that the user hover it.
+4- An array that will save the status of the cards (by their index maybe) whether they are flipped or matched.
+5- A 2 dimensional array that will save the indexes of the cards that are supposed to be matched
+6- the winning function when all pairs are matched
+7- a reset button that will restart the game at anytime
+8- An if condition if a two cards are flipped are they matched or not; if so they will be marked as matched (may be removed)
