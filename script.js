@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const finalMoves = document.getElementById("finalMoves")
   const finalTime = document.getElementById("finalTime")
   const playAgainBtn = document.getElementById("playAgain")
+  const theme = document.getElementById("theme")
 
   // Card symbols (8 pairs)
   const cardSymbols = ["🐼", "🐨", "🐻‍❄️", "🐰", "🐭", "🐢", "🕊️", "🍇"]
@@ -152,5 +153,25 @@ document.addEventListener("DOMContentLoaded", () => {
       ;[array[i], array[j]] = [array[j], array[i]]
     }
     return array
+  }
+})
+//Dark Mode
+theme.addEventListener("click", () => {
+  if (document.body.classList.contains("lightMode")) {
+    document.body.classList.remove("lightMode")
+    document.body.classList.add("darkMode")
+    document.body.style.backgroundColor = "#640D5F"
+    document.body.style.color = "#0D1164"
+    document.getElementById("mainHeader").style.color = "#F78D60"
+    document.querySelector("card-back").style.color = "#EA2264"
+    document.getElementById("theme").innerText = "🌚"
+  } else {
+    document.body.classList.remove("darkMode")
+    document.body.classList.add("lightMode")
+    document.body.style.backgroundColor = "#7ed4ad"
+    document.body.style.color = "#08293a"
+    document.getElementById("mainHeader").style.color = "#08293a"
+    document.querySelector("card-back").style.color = "#b03052"
+    document.getElementById("theme").innerText = "🌞"
   }
 })
