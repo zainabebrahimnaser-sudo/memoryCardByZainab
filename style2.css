@@ -169,7 +169,14 @@ button:hover {
   }
 }
 
-#resetBtn {
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+#resetBtn,
+#homeBtn {
   height: 80px;
   width: 300px;
   background-color: #ffe561;
