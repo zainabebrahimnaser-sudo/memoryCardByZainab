@@ -3,20 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style2.css" />
     <script defer src="./script.js"></script>
-    <title>Document</title>
+    <title>card memory game</title>
   </head>
   <body>
-    <h3 id="mainHeader">CARDS MEMORY GAME</h3>
-    <main>
-      <div id="board"></div>
-    </main>
-    <footer>
-      <button id="reset">RESET</button>
-      <aside>
-        <button id="next">GO TO NEXT LEVEL</button>
-      </aside>
-    </footer>
+    <h1 id="mainHeader">CARDS MEMORY GAME</h1>
+
+    <div class="game-info">
+      <div class="moves">Moves: <span id="moves-count">0</span></div>
+      <div class="timer">Time: <span id="time">0</span>s</div>
+    </div>
+
+    <div class="game-board" id="game-board"></div>
+
+    <button id="reset-btn">Reset Game</button>
+
+    <div class="win-message" id="win-message">
+      <div class="win-content">
+        <h2>Congratulations! You Won!</h2>
+        <p>
+          You completed the game in <span id="final-moves">0</span> moves and
+          <span id="final-time">0</span> seconds!
+        </p>
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
   </body>
 </html>
