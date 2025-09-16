@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let timerInterval
 
   // DOM elements
-  const gameBoard = document.getElementById("game-board")
-  const movesCount = document.getElementById("moves-count")
+  const gameBoard = document.getElementById("gameBoard")
+  const movesCount = document.getElementById("movesCount")
   const timeDisplay = document.getElementById("time")
-  const resetBtn = document.getElementById("reset-btn")
-  const winMessage = document.getElementById("win-message")
-  const finalMoves = document.getElementById("final-moves")
-  const finalTime = document.getElementById("final-time")
-  const playAgainBtn = document.getElementById("play-again")
+  const resetBtn = document.getElementById("resetBtn")
+  const winMessage = document.getElementById("winMessage")
+  const finalMoves = document.getElementById("finalMoves")
+  const finalTime = document.getElementById("finalTime")
+  const playAgainBtn = document.getElementById("playAgain")
 
   // Card symbols (8 pairs)
   const cardSymbols = ["🍎", "🍌", "🍒", "🍓", "🍊", "🍐", "🥝", "🍇"]
