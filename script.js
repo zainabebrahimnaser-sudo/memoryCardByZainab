@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const theme = document.getElementById("theme")
 
   // Card symbols (8 pairs)
-  const cardSymbols = ["🐼", "🐨", "🐻‍❄️", "🐰", "🐭", "🐢", "🕊️", "🍇"]
+  const cardSymbols = ["🐼", "🐨", "🐻‍❄️", "🐰", "🐭", "🐢", "🕊️", "🐧"]
 
   // Initialize the game
   initGame()
