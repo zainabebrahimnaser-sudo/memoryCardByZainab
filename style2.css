@@ -178,3 +178,23 @@ button:hover {
   font-size: 35px;
   font-family: "Fjalla One", sans-serif;
 }
+
+.darkMode {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#darkMode {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  font-size: 90px;
+}

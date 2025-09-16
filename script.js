@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const playAgainBtn = document.getElementById("playAgain")
 
   // Card symbols (8 pairs)
-  const cardSymbols = ["🐼", "🐨", "🐻‍❄️", "🐰", "🐭", "🐢", "🕊️", "🐣"]
+  const cardSymbols = ["🐼", "🐨", "🐻‍❄️", "🐰", "🐭", "🐢", "🕊️", "🍇"]
 
   // Initialize the game
   initGame()
