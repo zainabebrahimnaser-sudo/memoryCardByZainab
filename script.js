@@ -163,15 +163,15 @@ theme.addEventListener("click", () => {
     document.body.style.backgroundColor = "#640D5F"
     document.body.style.color = "#0D1164"
     document.getElementById("mainHeader").style.color = "#F78D60"
-    document.querySelector("card-back").style.color = "#EA2264"
-    document.getElementById("theme").innerText = "🌚"
+    document.querySelector(".card-front").style.color = "#EA2264"
+    document.getElementById("theme").innerHTML = "🌞"
   } else {
     document.body.classList.remove("darkMode")
     document.body.classList.add("lightMode")
     document.body.style.backgroundColor = "#7ed4ad"
     document.body.style.color = "#08293a"
     document.getElementById("mainHeader").style.color = "#08293a"
-    document.querySelector("card-back").style.color = "#b03052"
-    document.getElementById("theme").innerText = "🌞"
+    document.querySelector(".card-front").style.color = "#b03052"
+    document.getElementById("theme").innerHTML = "🌚"
   }
 })
