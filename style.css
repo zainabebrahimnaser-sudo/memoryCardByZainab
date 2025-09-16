@@ -1,3 +1,124 @@
-body{
-  background-color: pink;
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Londrina+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Knewave&family=Londrina+Shadow&display=swap");
+body {
+  background-color: #7ed4ad;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+}
+#welDiv {
+  width: 70%;
+}
+#welcome {
+  font-family: "Knewave", system-ui;
+  font-size: 100px;
+  text-align: center;
+  color: #08293a;
+}
+#playBtn {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 70px;
+  background-color: #b03052;
+  border-style: inset;
+  height: 100px;
+  width: 240px;
+  color: #08293a;
+}
+#mainHeader {
+  color: #08293a;
+  font-family: "Knewave", system-ui;
+  font-size: 50px;
+  text-align: center;
+}
+#next {
+  height: 80px;
+  width: 300px;
+  background-color: #ffe561;
+  border: 4px solid #3d0301;
+  color: #08293a;
+  font-size: 35px;
+  font-family: "Fjalla One", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 50px;
+}
+.cardContainer {
+  height: 120px;
+  width: 90px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+
+}
+.cardFront {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: #b03052;
+  border: 4px solid #3d0301;
+   transition: transform 0.6s;
+}
+.cardBack {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+   transition: transform 0.6s;
+}
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  align-self: flex-start;
+}
+aside {
+  align-self: flex-end;
+}
+.circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #3d0301;
+}
+section {
+  display: none;
+}
+#reset {
+  height: 80px;
+  width: 100px;
+  background-color: #ffe561;
+  border: 4px solid #3d0301;
+  color: #08293a;
+  font-size: 35px;
+  font-family: "Fjalla One", sans-serif;
+}
+.card.flipped {
+  transform: rotateY(180deg);
+}
+.cardBack img {
+  width: 80%;
+  height: auto;
+}
+.cardFace {
+  backface-visibility: hidden;
 }
