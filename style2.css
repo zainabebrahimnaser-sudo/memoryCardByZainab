@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Knewave&family=Londrina+Shadow&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Knewave&family=Londrina+Shadow&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -144,17 +145,18 @@ button:hover {
 }
 
 .winContent {
-  background: white;
+  background: #ffe561;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  color: #333;
+  color: #08293a;
+  font-family: "Fjalla One", sans-serif;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .winContent h2 {
   margin-bottom: 20px;
-  color: #2ecc71;
+  color: #08293a;
 }
 
 @media (max-width: 500px) {
