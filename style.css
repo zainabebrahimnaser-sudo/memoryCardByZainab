@@ -114,10 +114,14 @@ section {
 .card.flipped {
   transform: rotateY(180deg);
 }
+
 .cardBack img {
   width: 80%;
   height: auto;
 }
+
 .cardFace {
   backface-visibility: hidden;
 }
+
+
