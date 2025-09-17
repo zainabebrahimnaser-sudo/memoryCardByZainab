@@ -160,18 +160,24 @@ theme.addEventListener("click", () => {
   if (document.body.classList.contains("lightMode")) {
     document.body.classList.remove("lightMode")
     document.body.classList.add("darkMode")
-    document.body.style.backgroundColor = "#640D5F"
-    document.body.style.color = "#0D1164"
-    document.getElementById("mainHeader").style.color = "#F78D60"
-    document.querySelector(".card-front").style.color = "#EA2264"
     document.getElementById("theme").innerHTML = "🌞"
+    document.body.style.backgroundColor = "#640D5F"
+    document.body.style.color = "#F78D60"
+    if (document.getElementById("mainHeader"))
+      document.getElementById("mainHeader").style.color = "#F78D60"
+    if (document.getElementById("welcome"))
+      document.getElementById("welcome").style.color = "#F78D60"
+    document.querySelector(".card-front").style.color = "#EA2264"
   } else {
     document.body.classList.remove("darkMode")
     document.body.classList.add("lightMode")
+    document.getElementById("theme").innerHTML = "🌚"
     document.body.style.backgroundColor = "#7ed4ad"
     document.body.style.color = "#08293a"
-    document.getElementById("mainHeader").style.color = "#08293a"
+    if (document.getElementById("mainHeader"))
+      document.getElementById("mainHeader").style.color = "#08293a"
+    if (document.getElementById("welcome"))
+      document.getElementById("welcome").style.color = "#08293a"
     document.querySelector(".card-front").style.color = "#b03052"
-    document.getElementById("theme").innerHTML = "🌚"
   }
 })
