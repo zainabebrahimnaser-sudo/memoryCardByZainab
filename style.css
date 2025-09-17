@@ -124,4 +124,23 @@ section {
   backface-visibility: hidden;
 }
 
+.theme {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
 
+#theme {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 100%;
+  width: 100%;
+  font-size: 90px;
+  cursor: pointer;
+}
