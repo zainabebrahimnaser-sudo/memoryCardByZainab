@@ -167,7 +167,10 @@ theme.addEventListener("click", () => {
       document.getElementById("mainHeader").style.color = "#F78D60"
     if (document.getElementById("welcome"))
       document.getElementById("welcome").style.color = "#F78D60"
-    document.querySelector(".card-front").style.color = "#EA2264"
+    if (document.querySelector(".card-front"))
+      document.querySelector(".card-front").style.color = "#EA2264"
+    if (document.querySelector("#playBtn"))
+      document.querySelector("#playBtn").style.backgroundColor = "#7ed4ad"
   } else {
     document.body.classList.remove("darkMode")
     document.body.classList.add("lightMode")
@@ -178,6 +181,7 @@ theme.addEventListener("click", () => {
       document.getElementById("mainHeader").style.color = "#08293a"
     if (document.getElementById("welcome"))
       document.getElementById("welcome").style.color = "#08293a"
-    document.querySelector(".card-front").style.color = "#b03052"
+    if (document.querySelector(".card-front"))
+      document.querySelector(".card-front").style.color = "#b03052"
   }
 })
