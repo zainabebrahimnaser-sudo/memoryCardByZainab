@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
   resetBtn.addEventListener("click", initGame)
   playAgainBtn.addEventListener("click", initGame)
 
-  // Utility function to shuffle array (Fisher-Yates algorithm)
+  // Utility function to shuffle array (Fisher-Yates algorithm) 
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1))
@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return array
   }
 })
+
 //Dark Mode
 theme.addEventListener("click", () => {
   if (document.body.classList.contains("lightMode")) {
@@ -168,9 +169,9 @@ theme.addEventListener("click", () => {
     if (document.getElementById("welcome"))
       document.getElementById("welcome").style.color = "#F78D60"
     if (document.querySelector(".card-front"))
-      document.querySelector(".card-front").style.color = "#EA2264"
+      document.querySelector(".card-front").style.color = "#f0ea2fff"
     if (document.querySelector("#playBtn"))
-      document.querySelector("#playBtn").style.backgroundColor = "#7ed4ad"
+      document.querySelector("#playBtn").style.backgroundColor = "#f0ea2fff"
   } else {
     document.body.classList.remove("darkMode")
     document.body.classList.add("lightMode")
@@ -183,5 +184,7 @@ theme.addEventListener("click", () => {
       document.getElementById("welcome").style.color = "#08293a"
     if (document.querySelector(".card-front"))
       document.querySelector(".card-front").style.color = "#b03052"
+    if (document.querySelector("#playBtn"))
+      document.querySelector("#playBtn").style.backgroundColor = "#b03052"
   }
 })
